@@ -1,3 +1,5 @@
+# Enter your information here
+
 USERNAME = ""
 PASSWORD = ""
 CLIENT_ID = ""
