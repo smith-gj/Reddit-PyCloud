@@ -1,6 +1,6 @@
 # Reddit PyCloud
 
-This is our final project for CS2021 at University of Cincinnati written entirely in python. Accesses reddit API and displays comment/post data in a wordcloud format for subject analysis. 
+This is our final project for CS2021 at University of Cincinnati written entirely in python. Accesses reddit API and displays comment/post data in a wordcloud format for subject analysis. Provided here is a framework. In order to use for yourself, see the **Installation** section below.
 
 ## 3rd Party Libraries Used
 
@@ -23,4 +23,4 @@ pip install scrapy
 pip install wordcloud
 ```
 
-The program runs on its own reddit account when accessing the reddit API through PRAW. If so desired, the user can input their own API keys in api.py. 
+It is important to note that an authentic reddit account is required for accessing the reddit API. As such, log into a valid reddit account and go to your user preferences, and navigate to the apps tab. Create an app and copy your API keys to *keys.py*. Do the same with your username and password. If you want, create a fresh account and make your own bot!
