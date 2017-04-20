@@ -16,8 +16,11 @@ Clone this repository to a directory of your choosing. Then create a virtual env
 
 ```
 virtualenv env1
+source env1/Scripts/activate
 
 pip install praw
 pip install scrapy
 pip install wordcloud
 ```
+
+The program runs on its own reddit account when accessing the reddit API through PRAW. If so desired, the user can input their own API keys in api.py. 
