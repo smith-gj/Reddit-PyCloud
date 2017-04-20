@@ -23,4 +23,4 @@ pip install scrapy
 pip install wordcloud
 ```
 
-It is important to note that an authentic reddit account is required for accessing the reddit API. As such, log into a valid reddit account and go to your user preferences, and navigate to the apps tab. Create an app and copy your API keys to *keys.py*. Do the same with your username and password. If you want, create a fresh account and make your own bot!
+It is important to note that an authentic reddit account is required for accessing the reddit API. As such, log into a valid reddit account and go to your user preferences, and navigate to the apps tab. Create an app and copy your API keys to *keys.py*.
