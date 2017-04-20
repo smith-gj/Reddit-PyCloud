@@ -9,3 +9,15 @@ Final project for CS2021 at University of Cincinnati written entirely in python.
 - scrapy
 
 See requirements.txt for more in-depth information.
+
+## Installation
+
+Clone this repository to a directory of your choosing. Then create a virtual environment in which to install/run the third-party python libraries.
+
+```
+virtualenv env1
+
+pip install praw
+pip install scrapy
+pip install wordcloud
+```
