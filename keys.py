@@ -1,8 +1,6 @@
-USERNAME = ""
-PASSWORD = ""
 CLIENT_ID = ""
 CLIENT_SECRET = ""
+USER_AGENT = "Reddit PyCloud bot v1.0 (by /u/botManCloud)"
 
 def getKeys():
-    return (USERNAME, PASSWORD, CLIENT_ID ,CLIENT_SECRET )
-    
+    return (CLIENT_ID, CLIENT_SECRET, USER_AGENT)
