@@ -1,6 +1,6 @@
-# CS2021FinalProject
+# Reddit PyCloud
 
-Final project for CS2021 at University of Cincinnati written entirely in python. Accesses reddit API and displays comment/post data in a wordcloud format for subject analysis. 
+This is our final project for CS2021 at University of Cincinnati written entirely in python. Accesses reddit API and displays comment/post data in a wordcloud format for subject analysis. 
 
 ## 3rd Party Libraries Used
 
