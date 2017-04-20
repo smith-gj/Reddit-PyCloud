@@ -12,7 +12,7 @@ See requirements.txt for more in-depth information.
 
 ## Installation
 
-Clone this repository to a directory of your choosing. Then create a virtual environment in which to install/run the third-party python libraries.
+Clone this repository to a directory of your choosing. Then create a virtual environment in which to install/run the third-party python libraries. This project requires python 3.x to be installed on the user's machine.
 
 ```
 virtualenv env1
