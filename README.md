@@ -5,7 +5,8 @@ This is our final project for CS2021 at University of Cincinnati written entirel
 ## 3rd Party Libraries Used
 
 - PRAW
-- wordcloud and its dependencies
+- wordcloud
+- the dependencies of the above libraries
 
 See requirements.txt for more in-depth information.
 
