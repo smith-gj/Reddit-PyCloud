@@ -18,13 +18,20 @@ virtualenv env1
 source env1/Scripts/activate
 
 pip install praw
-pip install scrapy
 pip install wordcloud
 ```
 
 It is important to note that an authentic reddit account is required for accessing the reddit API. As such, log into a valid reddit account and go to your user preferences, and navigate to the apps tab. Create an app and copy your API keys to *keys.py*.
 
 Additionally, the project requires a DLL not found in the current version of Pillow (PIL), which is used to display the finalized word cloud. As such, you'll need to install a previous version.
+
+To see if this affects you, try the following code in your python interpreter (make sure your virtual environment is activated):
+
+```
+from PIL import images
+```
+
+If this gives an ImportError, the following remedy will suffice.
 
 ```
 pip uninstall pillow
