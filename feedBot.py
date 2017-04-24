@@ -1,42 +1,38 @@
 # Code based off masked example from https://amueller.github.io/word_cloud
-import numpy as np
-from PIL import Image
 from os import path
+from PIL import Image
+import numpy as np
 import matplotlib.pyplot as plt
-import random
 
-from wordcloud import WordCloud, STOPWORDS
-
-
-def grey_color_func(word, font_size, position, orientation, random_state=None,
-                    **kwargs):
-    return "hsl(0, 0%%, %d%%)" % random.randint(60, 100)
+from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
 d = path.dirname(__file__)
 
-# snoo image for wordcloud mask
+# Read the whole text.
+text = open(path.join(d, 'results.txt')).read()
+
+# read and color the mask image
 # http://reddits-world.wikia.com/wiki/Snoo
-mask = np.array(Image.open(path.join(d, "snoo.png")))
+reddit_coloring = np.array(Image.open(path.join(d, "snoo.png")))
 
-# Read text file of scraped reddit data from the API
-text = open("results.txt").read()
+wc = WordCloud(background_color="white", max_words=2000, mask=reddit_coloring,
+                max_font_size=40, random_state=42)
 
-# adding movie script specific stopwords
-stopwords = set(STOPWORDS)
-stopwords.add("int")
-stopwords.add("ext")
+# generate word cloud
+wc.generate(text)
 
-wc = WordCloud(max_words=1000, mask=mask, stopwords=stopwords, margin=10,
-               random_state=1).generate(text)
-# store default colored image
-default_colors = wc.to_array()
-plt.title("Custom colors")
-plt.imshow(wc.recolor(color_func=grey_color_func, random_state=3),
-           interpolation="bilinear")
-wc.to_file("reddit-cloud.png")
+# create coloring from image
+image_colors = ImageColorGenerator(reddit_coloring)
+
+# show
+plt.imshow(wc, interpolation="bilinear")
 plt.axis("off")
 plt.figure()
-plt.title("Default colors")
-plt.imshow(default_colors, interpolation="bilinear")
+# recolor wordcloud and show
+# we could also give color_func=image_colors directly in the constructor
+plt.imshow(wc.recolor(color_func=image_colors), interpolation="bilinear")
+plt.axis("off")
+plt.figure()
+plt.imshow(reddit_coloring, cmap=plt.cm.gray, interpolation="bilinear")
 plt.axis("off")
 plt.show()
