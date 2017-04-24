@@ -25,14 +25,9 @@ wc.generate(text)
 image_colors = ImageColorGenerator(reddit_coloring)
 
 # show
-plt.imshow(wc, interpolation="bilinear")
-plt.axis("off")
 plt.figure()
 # recolor wordcloud and show
 # we could also give color_func=image_colors directly in the constructor
 plt.imshow(wc.recolor(color_func=image_colors), interpolation="bilinear")
-plt.axis("off")
-plt.figure()
-plt.imshow(reddit_coloring, cmap=plt.cm.gray, interpolation="bilinear")
 plt.axis("off")
 plt.show()
