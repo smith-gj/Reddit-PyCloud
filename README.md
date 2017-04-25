@@ -41,4 +41,12 @@ pip install pillow==4.0.0
 
 ## Running the program
 
-Simply run main.py and follow the prompts. Ensure that snoo.png is in the same directory as your code. If you wish, you can change that image to another for a different mask. Just be sure to change the corresponding lines in *feedBot.py*.
+Simply run *main.py* and follow the prompts. Ensure that *snoo.png* is in the same directory as your code. If you wish, you can change that image to another for a different mask. Just be sure to change the corresponding lines in *feedBot.py*.
+
+This may take a few seconds to complete. After all, it is parsing hundreds upon hundreds of comments, creating a text corpus, and then creating a visualization of said corpus.
+
+## Reflection
+
+This program has potential in data analysis with regards to social networking. Reddit is a unique place, and many of its users express unique opinions. It's interesting to see the contrast between different communities when it comes to subject matter. For instance, compare the wordcloud generated when searching the topic "Syria" on the politics subreddit vs. that generated from The_Donald. 
+
+In the future, it can be possible to quantify these differences. Perhaps placing all the different wordclouds into one and color coding by user/subreddit origin.
