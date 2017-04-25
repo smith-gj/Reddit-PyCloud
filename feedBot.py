@@ -3,20 +3,22 @@ from os import path
 from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
+import re
 
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
 # filename of text corpus passed to function initially
-def feedBot(filename):
+def feedBot(file_name):
     # initialize
     d = path.dirname(__file__)
 
     # Read the whole text.
-    text = open(path.join(d, filename)).read()
+    text = open(path.join(d, file_name), encoding="utf8").read()
 
     # read and color the mask image
     # http://reddits-world.wikia.com/wiki/Snoo
     reddit_coloring = np.array(Image.open(path.join(d, "snoo.png")))
+
 
     wc = WordCloud(background_color="white", max_words=2000, mask=reddit_coloring,
                     max_font_size=40, random_state=42)

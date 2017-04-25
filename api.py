@@ -25,11 +25,16 @@ def main():
     new_file.close()
 
     # create and display word cloud
-    feedBot(file_name)
+    try:
+        feedBot(file_name)
 
+    # catch case where text file is empty
+    except ValueError:
+        print("Text file empty. Cannot create cloud with no words.")
+        pass
     # cleaning up the created files
-    os.remove("file_name")
-    
+    os.remove(file_name)
+
 # also used praw documentation to help this
 def process_submission(submission, keyword, new_file):
     normalized_title = submission.title.lower()

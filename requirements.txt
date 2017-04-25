@@ -1,3 +1,5 @@
+* Gathered from pip >> freeze *
+
 appdirs==1.4.3
 asn1crypto==0.22.0
 attrs==16.3.0
@@ -15,7 +17,7 @@ numpy==1.12.1
 olefile==0.44
 packaging==16.8
 parsel==1.1.0
-Pillow==4.1.0
+Pillow==4.0.0
 praw==4.4.0
 prawcore==0.8.0
 pyasn1==0.2.3
