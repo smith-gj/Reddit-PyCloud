@@ -8,7 +8,7 @@ This is our final project for CS2021 at University of Cincinnati written entirel
 - wordcloud
 
 See requirements.txt for more in-depth information.
-Wordcloud includes several other third party libraries, such as numpy and MatPlotLib
+Wordcloud includes several other third party libraries, such as numpy and matplotlib.
 
 ## Installation
 
