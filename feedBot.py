@@ -6,28 +6,31 @@ import matplotlib.pyplot as plt
 
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
-d = path.dirname(__file__)
+# filename of text corpus passed to function initially
+def feedBot(filename):
+    # initialize
+    d = path.dirname(__file__)
 
-# Read the whole text.
-text = open(path.join(d, 'results.txt')).read()
+    # Read the whole text.
+    text = open(path.join(d, filename)).read()
 
-# read and color the mask image
-# http://reddits-world.wikia.com/wiki/Snoo
-reddit_coloring = np.array(Image.open(path.join(d, "snoo.png")))
+    # read and color the mask image
+    # http://reddits-world.wikia.com/wiki/Snoo
+    reddit_coloring = np.array(Image.open(path.join(d, "snoo.png")))
 
-wc = WordCloud(background_color="white", max_words=2000, mask=reddit_coloring,
-                max_font_size=40, random_state=42)
+    wc = WordCloud(background_color="white", max_words=2000, mask=reddit_coloring,
+                    max_font_size=40, random_state=42)
 
-# generate word cloud
-wc.generate(text)
+    # generate word cloud
+    wc.generate(text)
 
-# create coloring from image
-image_colors = ImageColorGenerator(reddit_coloring)
+    # create coloring from image
+    image_colors = ImageColorGenerator(reddit_coloring)
 
-# show
-plt.figure()
-# recolor wordcloud and show
-# we could also give color_func=image_colors directly in the constructor
-plt.imshow(wc.recolor(color_func=image_colors), interpolation="bilinear")
-plt.axis("off")
-plt.show()
+    # show
+    plt.figure()
+    # recolor wordcloud and show
+    # we could also give color_func=image_colors directly in the constructor
+    plt.imshow(wc.recolor(color_func=image_colors), interpolation="bilinear")
+    plt.axis("off")
+    plt.show()
