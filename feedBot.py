@@ -18,8 +18,7 @@ def feedBot(file_name):
     # read and color the mask image
     # http://reddits-world.wikia.com/wiki/Snoo
     reddit_coloring = np.array(Image.open(path.join(d, "snoo.png")))
-
-
+    
     wc = WordCloud(background_color="white", max_words=2000, mask=reddit_coloring,
                     max_font_size=40, random_state=42)
 
