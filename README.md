@@ -6,9 +6,9 @@ This is our final project for CS2021 at University of Cincinnati written entirel
 
 - PRAW
 - wordcloud
-- the dependencies of the above libraries
 
 See requirements.txt for more in-depth information.
+Wordcloud includes several other third party libraries, such as numpy and MatPlotLib
 
 ## Installation
 
@@ -41,4 +41,4 @@ pip install pillow==4.0.0
 
 ## Running the program
 
-Simply run reddit-cloud.py and follow the prompts. Ensure that snoo.png is in the same directory as your code. If you wish, you can change that image to another for a different mask. Just be sure to change the corresponding lines in *feedBot.py*.
+Simply run main.py and follow the prompts. Ensure that snoo.png is in the same directory as your code. If you wish, you can change that image to another for a different mask. Just be sure to change the corresponding lines in *feedBot.py*.
