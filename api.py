@@ -1,10 +1,10 @@
 import praw
 import os
-
 from keys import getID, getSecret, getAgent
 from feedBot import feedBot
 
 def main():
+    #https://github.com/reddit/reddit/wiki/OAuth2-Quick-Start-Example#first-steps
     # create reddit instance
     ID = getID()
     secret = getSecret()
