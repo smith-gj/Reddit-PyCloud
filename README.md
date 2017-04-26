@@ -45,7 +45,7 @@ Simply run *main.py* and follow the prompts. Ensure that *snoo.png* is in the sa
 
 This may take a few seconds to complete. After all, it is parsing hundreds upon hundreds of comments, creating a text corpus, and then creating a visualization of said corpus.
 
-If you want to see a word cloud generated from the top 100 posts on reddit, just enter a space as your keyword.
+If you want to see a word cloud generated from the top 100 daily posts on a subreddit, just enter a space as your keyword.
 
 ## Reflection
 
