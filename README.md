@@ -45,8 +45,14 @@ Simply run *main.py* and follow the prompts. Ensure that *snoo.png* is in the sa
 
 This may take a few seconds to complete. After all, it is parsing hundreds upon hundreds of comments, creating a text corpus, and then creating a visualization of said corpus.
 
+If you want to see a word cloud generated from the top 100 daily posts on a subreddit, just enter a space as your keyword.
+
 ## Reflection
 
-This program has potential in data analysis with regards to social networking. Reddit is a unique place, and many of its users express unique opinions. It's interesting to see the contrast between different communities when it comes to subject matter. For instance, compare the wordcloud generated when searching the topic "Russia" on the politics subreddit vs. that generated from The_Donald. 
+This program has potential in data analysis with regards to social networking. Reddit is a unique place, and many of its users express unique opinions. It's interesting to see the contrast between different communities when it comes to subject matter. For instance, compare the wordcloud generated when searching the topic "Russia" on the politics subreddit vs. that generated from The_Donald. Those are shown below:
+
+![Alt text](Samples/russia-politics.PNG "r/politics")
+
+![Alt text](Samples/russia-thedonald.PNG "r/The_Donald")
 
 In the future, it can be possible to quantify these differences. Perhaps placing all the different wordclouds into one and color coding by user/subreddit origin.
