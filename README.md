@@ -57,4 +57,4 @@ This program has potential in data analysis with regards to social networking. R
 
 In the future, it can be possible to quantify these differences. Perhaps placing all the different wordclouds into one and color coding by user/subreddit origin.
 
-This was all a new learning experience for the both of us, but thankfulyl we were able to work everything out in the end. Accessing and formatting information given by an API can be a nightmare sometimes.
+This was all a new learning experience for the both of us, but thankfully we were able to work everything out in the end. Accessing and formatting information given by an API can be a nightmare sometimes.
