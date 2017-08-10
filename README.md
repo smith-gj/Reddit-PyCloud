@@ -39,6 +39,14 @@ pip uninstall pillow
 pip install pillow==4.0.0
 ```
 
+Additionally, once the virtual environment is created and active, simply install the necessary dependencies through the following command:
+
+```
+pip install -r requirements.txt
+```
+
+This should install the necessary modules and dependencies listed in the named fil (which is included in the repository).
+
 ## Running the program
 
 Simply run *main.py* and follow the prompts. Ensure that *snoo.png* is in the same directory as your code. If you wish, you can change that image to another for a different mask. Just be sure to change the corresponding lines in *feedBot.py*.
