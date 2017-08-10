@@ -17,7 +17,17 @@ Clone this repository to a directory of your choosing. Then create a virtual env
 ```
 virtualenv env1
 source env1/Scripts/activate
+```
 
+Once the virtual environment is created and active, simply install the necessary dependencies through the following command:
+
+```
+pip install -r requirements.txt
+```
+
+Alternatively, you could install everything manually with the following:
+
+```
 pip install praw
 pip install wordcloud
 ```
@@ -39,11 +49,7 @@ pip uninstall pillow
 pip install pillow==4.0.0
 ```
 
-Additionally, once the virtual environment is created and active, simply install the necessary dependencies through the following command:
 
-```
-pip install -r requirements.txt
-```
 
 This should install the necessary modules and dependencies listed in the named fil (which is included in the repository).
 
