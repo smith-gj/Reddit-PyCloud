@@ -25,6 +25,10 @@ Once the virtual environment is created and active, simply install the necessary
 pip install -r requirements.txt
 ```
 
+
+
+This should install the necessary modules and dependencies listed in the file (which is included in the repository).
+
 Alternatively, you could install everything manually with the following:
 
 ```
@@ -49,9 +53,6 @@ pip uninstall pillow
 pip install pillow==4.0.0
 ```
 
-
-
-This should install the necessary modules and dependencies listed in the named fil (which is included in the repository).
 
 ## Running the program
 
