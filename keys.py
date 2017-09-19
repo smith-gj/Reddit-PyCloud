@@ -1,7 +1,7 @@
 # Enter your information here
 
-CLIENT_ID = ''
-CLIENT_SECRET = ''
+CLIENT_ID = 'test'
+CLIENT_SECRET = 'test'
 USER_AGENT = 'Reddit PyCloud bot v1.0 (by /u/botManCloud)'
 
 def getID():
