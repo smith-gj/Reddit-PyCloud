@@ -27,7 +27,6 @@ def main():
     # create and display word cloud
     try:
         feedBot(file_name)
-
     # catch case where text file is empty
     except ValueError:
         print("Text file empty. Cannot create cloud with no words.")
